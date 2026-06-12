@@ -28,8 +28,9 @@ DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
-CORS_ALLOWED_ORIGINS = config('CORS_ALLOWED_ORIGINS', default='http://localhost:5173,http://localhost:8000').split(',')
-
+CORS_ALLOWED_ORIGINS = [
+    "https://complaint-registration-system-charles.netlify.app",
+]
 
 # Application definition
 
