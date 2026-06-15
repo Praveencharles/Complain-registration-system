@@ -47,7 +47,7 @@ function App() {
         <Route path="/dashboard" element={user ? <Dashboard user={user} onLogout={handleLogout} /> : <Navigate to="/login" />} />
         <Route path="/dashboard/new" element={user ? <CreateComplaint user={user} /> : <Navigate to="/login" />} />
         <Route path="/dashboard/:id" element={user ? <ComplaintProgress user={user} /> : <Navigate to="/login" />} />
-        <Route path="/superuser" element={user && user.user_type === 'staff' ? <SuperuserDashboard user={user} onLogout={handleLogout} /> : <Navigate to="/login" />} />
+        <Route path="/superuser" element={user && user.user_type === 'admin' ? <SuperuserDashboard user={user} onLogout={handleLogout} /> : <Navigate to="/login" />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </div>
