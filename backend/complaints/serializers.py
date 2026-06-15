@@ -11,13 +11,13 @@ class UserSerializer(serializers.ModelSerializer):
         fields = ['id', 'username', 'email', 'user_type']
 
     def get_user_type(self, obj):
-    if obj.is_superuser:
-        return "admin"
+        if obj.is_superuser:
+            return "admin"
 
-    try:
-        return obj.profile.user_type
-    except UserProfile.DoesNotExist:
-        return None
+        try:
+            return obj.profile.user_type
+        except UserProfile.DoesNotExist:
+            return None
 
 
 class RegisterSerializer(serializers.ModelSerializer):
