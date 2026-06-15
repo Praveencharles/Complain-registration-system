@@ -11,8 +11,6 @@ urlpatterns = [
     path('complaints/<int:pk>/status/', views.ComplaintStatusUpdateView.as_view(), name='complaint-status'),
 
 
-path('create-admin/', views.CreateAdminView.as_view()),
-
 
 
 
