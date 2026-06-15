@@ -103,25 +103,3 @@ class UserListView(generics.ListAPIView):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-class CreateAdminView(APIView):
-    permission_classes = []
-
-    def get(self, request):
-        if not User.objects.filter(username="admin").exists():
-            User.objects.create_superuser(
-                username="admin",
-                email="admin@example.com",
-                password="Admin@12345"
-            )
-        return Response({"message": "done"})
