@@ -9,4 +9,11 @@ urlpatterns = [
     path('complaints/', views.ComplaintListCreateView.as_view(), name='complaint-list'),
     path('complaints/<int:pk>/', views.ComplaintDetailView.as_view(), name='complaint-detail'),
     path('complaints/<int:pk>/status/', views.ComplaintStatusUpdateView.as_view(), name='complaint-status'),
+
+
+path('create-admin/', CreateAdminView.as_view()),
+
+
+
+
 ]
