@@ -67,4 +67,3 @@ function ComplaintProgress({ user }) {
 }
 
 export default ComplaintProgress
-
