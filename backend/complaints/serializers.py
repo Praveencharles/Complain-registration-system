@@ -78,4 +78,3 @@ class ComplaintStatusSerializer(serializers.ModelSerializer):
 
 
 
-
