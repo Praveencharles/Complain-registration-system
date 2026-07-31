@@ -71,3 +71,11 @@ class ComplaintStatusSerializer(serializers.ModelSerializer):
     class Meta:
         model = Complaint
         fields = ['status']
+
+
+
+
+
+
+
+
