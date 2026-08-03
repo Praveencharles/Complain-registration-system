@@ -1,6 +1,3 @@
-
-
-
 # complaint management system 
 
 
